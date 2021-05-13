@@ -1,0 +1,13 @@
+Run the following command and record the outputs. Create a screencast for future references.
+
+kubectl config view
+kubectl config get-contexts                          # display list of contexts
+kubectl config current-context                     # display the current-context
+kubectl config use-context my-cluster-name                # set the default context to my-cluster-name
+
+1. Run a redis pod. - 
+kubectl run redis --image=redis
+kubectl run redis1 --image=redis:78.0
+
+2. Describe the redis pod and see if there is any failure. Explain why redis1 pod failed.
+    - redis:78.0 was not found in docker.io/library
